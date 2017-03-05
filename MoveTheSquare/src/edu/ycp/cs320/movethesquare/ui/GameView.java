@@ -28,8 +28,9 @@ public class GameView extends JPanel {
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
 		setBackground(MIDNIGHT_BLUE);
 
-		// djh2-KEC119-21: cahnged from 30 to 45
-		this.timer = new Timer(1000 / 45, new ActionListener() {
+		// djh2-KEC119-21: changed from 30 to 45
+		// djh2-YCPlaptop: change from 45 to 100
+		this.timer = new Timer(1000 / 100, new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -64,7 +65,8 @@ public class GameView extends JPanel {
 		super.paintComponent(g); // paint background
 		
 		// djh2-KEC110-21: changed from GREEN to RED
-		g.setColor(Color.RED);
+		// djh2-YCPlaptop: change from RED to YELLOW
+		g.setColor(Color.YELLOW);
 
 		Square square = model.getSquare();
 		
