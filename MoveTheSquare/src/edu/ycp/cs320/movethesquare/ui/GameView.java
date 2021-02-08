@@ -84,8 +84,9 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
-				square.setWidth(40.0);
-				square.setHeight(40.0);
+				//ksmith126 changed the block size
+				square.setWidth(80.0);
+				square.setHeight(80.0);
 				model.setSquare(square);
 				
 				GameController controller = new GameController();
