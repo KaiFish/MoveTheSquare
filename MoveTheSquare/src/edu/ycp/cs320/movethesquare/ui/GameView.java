@@ -82,8 +82,6 @@ public class GameView extends JPanel {
 
 		// lbradley1: change from YELLOW to BLUE
 		//setColor(Color.BLUE);
-
-
 		Square square = model.getSquare();
 		
 		g.drawRect((int) square.getX(), (int) square.getY(), (int) square.getWidth(), (int) square.getHeight());
@@ -100,6 +98,8 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
+				square.setWidth(100.0);
+				square.setHeight(100.0);
 
 				//uare.setWidth(60.0);
 				//uare.setHeight(25);
@@ -107,7 +107,6 @@ public class GameView extends JPanel {
 				// lbradley1: change the size of the square to be smaller
 				square.setWidth(25.0);
 				square.setHeight(25.0);
-
 				model.setSquare(square);
 				
 				GameController controller = new GameController();
