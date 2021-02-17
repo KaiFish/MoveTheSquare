@@ -76,7 +76,6 @@ public class GameView extends JPanel {
 		// djh2-YCPlaptop: change from RED to YELLOW
 
 		g.setColor(Color.RED);
-=======
 
 		//g.setColor(Color.GREEN);
 
@@ -104,7 +103,6 @@ public class GameView extends JPanel {
 
 				//uare.setWidth(60.0);
 				//uare.setHeight(25);
-=======
 
 				// lbradley1: change the size of the square to be smaller
 				square.setWidth(25.0);
