@@ -72,20 +72,9 @@ public class GameView extends JPanel {
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g); // paint background
 		
-		// djh2-KEC110-21: changed from GREEN to RED
-		// djh2-YCPlaptop: change from RED to YELLOW
-<<<<<<< HEAD
-		g.setColor(Color.ORANGE);
-=======
+		
+		g.setColor(RED);
 
-		g.setColor(Color.RED);
->>>>>>> 286916fc0e9708cfc44038c25ef366c1bebca433
-
-		//g.setColor(Color.GREEN);
-
-
-		// lbradley1: change from YELLOW to BLUE
-		//setColor(Color.BLUE);
 		Square square = model.getSquare();
 		
 		g.drawRect((int) square.getX(), (int) square.getY(), (int) square.getWidth(), (int) square.getHeight());
