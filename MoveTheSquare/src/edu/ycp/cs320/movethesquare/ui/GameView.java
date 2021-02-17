@@ -18,6 +18,7 @@ import edu.ycp.cs320.movethesquare.model.Square;
 
 public class GameView extends JPanel {
 
+
 	private static final Color MIDNIGHT_BLUE = new Color(212, 112, 112);
 
 	private static final Color GRAY = new Color(105, 110, 115);
@@ -80,7 +81,6 @@ public class GameView extends JPanel {
 		// djh2-YCPlaptop: change from RED to YELLOW
 
 		g.setColor(Color.GREEN);
-
 
 		//g.setColor(Color.GREEN);
 
