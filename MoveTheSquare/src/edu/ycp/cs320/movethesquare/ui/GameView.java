@@ -17,9 +17,11 @@ import edu.ycp.cs320.movethesquare.model.Game;
 import edu.ycp.cs320.movethesquare.model.Square;
 
 public class GameView extends JPanel {
+  
 	private static final Color MIDNIGHT_BLUE = new Color(25, 25, 112);
 	//dherr: new background color Sunset_Red
 	private static final Color Sunset_Red = new Color(220, 49, 11);
+	private static final Color RED = new Color(100, 0, 0);
 	
 	private Game model;
 	private GameController controller;
@@ -28,6 +30,7 @@ public class GameView extends JPanel {
 	public GameView(Game model) {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
+
 		//dherr: applied new background color
 		setBackground( Sunset_Red);
 
