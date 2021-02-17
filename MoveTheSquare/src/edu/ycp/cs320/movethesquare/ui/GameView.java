@@ -107,6 +107,8 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
+				square.setWidth(45.0);
+				square.setHeight(45.0);
 
 				
 				// MF changed square width from 40.0 to 80.0
