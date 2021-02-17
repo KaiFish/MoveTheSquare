@@ -17,7 +17,16 @@ import edu.ycp.cs320.movethesquare.model.Game;
 import edu.ycp.cs320.movethesquare.model.Square;
 
 public class GameView extends JPanel {
-	private static final Color MIDNIGHT_BLUE = new Color(70, 25, 50);
+
+
+
+  
+	private static final Color MIDNIGHT_BLUE = new Color(25, 25, 112);
+
+
+	private static final Color Sunset_Red = new Color(220, 49, 11);
+	private static final Color RED = new Color(100, 0, 0);
+
 	
 	private Game model;
 	private GameController controller;
@@ -26,8 +35,15 @@ public class GameView extends JPanel {
 	public GameView(Game model) {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
+		
+		
+		// MF changed this color from MIDNIGHT_BLUE to MIDNIGHT_PURPLE
 		setBackground(MIDNIGHT_BLUE);
 
+
+
+
+		
 		// djh2-KEC119-21: changed from 30 to 45
 		// djh2-YCPlaptop: change from 45 to 100
 		this.timer = new Timer(1000 / 100, new ActionListener() {
@@ -66,11 +82,20 @@ public class GameView extends JPanel {
 		
 		// djh2-KEC110-21: changed from GREEN to RED
 		// djh2-YCPlaptop: change from RED to YELLOW
+
 		g.setColor(Color.ORANGE);
 
+		// changed from YELLOW to BLUE
+		g.setColor(Color.BLUE);
+
+		//g.setColor(Color.GREEN);
+
+
+		// lbradley1: change from YELLOW to BLUE
+		//setColor(Color.BLUE);
 		Square square = model.getSquare();
 		
-		g.fillRect((int) square.getX(), (int) square.getY(), (int) square.getWidth(), (int) square.getHeight());
+		g.drawRect((int) square.getX(), (int) square.getY(), (int) square.getWidth(), (int) square.getHeight());
 	}
 	
 	public static void main(String[] args) {
@@ -86,6 +111,18 @@ public class GameView extends JPanel {
 				square.setY(220.0);
 				square.setWidth(90.0);
 				square.setHeight(40.0);
+
+
+				
+				// MF changed square width from 40.0 to 80.0
+				square.setWidth(80.0);
+				
+				// MF changed square height from 40.0 to 80.0
+				square.setHeight(80.0);
+				
+				
+
+
 				model.setSquare(square);
 				
 				GameController controller = new GameController();
