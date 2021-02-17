@@ -1,8 +1,9 @@
 package edu.ycp.cs320.movethesquare.model;
 
 public class Game {
-	// lbradley1: speed up the squares movement by double
+
 	public static final double MOVE_DIST = 6.0; // x/y distance square moves each tick 
+
 	private double width, height;
 	private Square square;
 	private double squareDx;
