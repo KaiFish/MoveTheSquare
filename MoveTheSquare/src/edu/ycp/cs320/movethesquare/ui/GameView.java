@@ -19,13 +19,13 @@ import edu.ycp.cs320.movethesquare.model.Square;
 public class GameView extends JPanel {
 
 
-
   
 	private static final Color MIDNIGHT_BLUE = new Color(25, 25, 112);
 
 
 	private static final Color Sunset_Red = new Color(220, 49, 11);
 	private static final Color RED = new Color(100, 0, 0);
+
 
 	
 	private Game model;
@@ -35,10 +35,8 @@ public class GameView extends JPanel {
 	public GameView(Game model) {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
-		
-		
-		// MF changed this color from MIDNIGHT_BLUE to MIDNIGHT_PURPLE
-		setBackground(MIDNIGHT_BLUE);
+
+		setBackground(GRAY);
 
 
 
@@ -83,8 +81,6 @@ public class GameView extends JPanel {
 		// djh2-KEC110-21: changed from GREEN to RED
 		// djh2-YCPlaptop: change from RED to YELLOW
 
-		g.setColor(Color.ORANGE);
-
 		// changed from YELLOW to BLUE
 		g.setColor(Color.BLUE);
 
@@ -109,8 +105,10 @@ public class GameView extends JPanel {
 				Square square = new Square();
 				square.setX(300.0);
 				square.setY(220.0);
+        
 				square.setWidth(90.0);
 				square.setHeight(40.0);
+
 
 
 				
