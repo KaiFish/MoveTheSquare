@@ -22,6 +22,7 @@ public class GameView extends JPanel {
 	private static final Color MIDNIGHT_BLUE = new Color(212, 112, 112);
 
 	private static final Color GRAY = new Color(105, 110, 115);
+	private static final Color GRAY2 = new Color(104, 50, 100);
 
 	private static final Color Sunset_Red = new Color(220, 49, 11);
 	private static final Color RED = new Color(100, 0, 0);
@@ -35,7 +36,7 @@ public class GameView extends JPanel {
 		this.model = model;
 		setPreferredSize(new Dimension((int) model.getWidth(), (int)model.getHeight()));
 
-		setBackground(GRAY);
+		setBackground(GRAY2);
 
 
 
